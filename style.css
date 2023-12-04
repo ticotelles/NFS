@@ -6,11 +6,50 @@ h2.title{
     text-align: center;
 }
 
-header{
-    border: 1px solid black;    
+#razao-social{
+    margin-left: 50px;
 }
-header.logo{
-    
+#CNPJ{
+    margin-left: 97px;
+}
+#InscMunicipal{
+    margin-left: 6px;
+}
+#Endereco{
+    margin-left: 74px;
+}
+
+#Nome-do-Cliente{
+    margin-left: 25px;
+}
+#CNPJ-CPF-Cliente{
+    margin-left: 64px;
+}
+#Endereço-Cliente{
+    margin-left: 3px;
+}
+#valor-total{
+    margin-left: 63px;
+}
+
+.serv{
+    position: relative;
+    bottom: 70px;
+}
+.inputs{
+    margin-bottom: 5px;
+}
+
+
+
+header{
+    border: 1px 1px  solid black; 
+    height: 162px   
+}
+.infHeader{
+    text-align: center;
+    position: relative;
+    bottom: 148px;
 }
 
 .containerGerar{
@@ -21,7 +60,7 @@ header.logo{
 }
 
 .primeiro{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .segundo{
     border: 1px solid black;

@@ -12,22 +12,22 @@
     <main class="container">
         <section>
             <h2>Dados do Prestador de Serviços</h2>
-            <div>
+            <div class="inputs">
                 <label for="razao-social">Razão Social:</label>
                 <input type="text" id="razao-social">
             </div>
 
-            <div>
+            <div class="inputs">
                 <label for="CNPJ">CNPJ:</label>
                 <input type="text" id="CNPJ">
             </div>
 
-            <div>
+            <div class="inputs">
                 <label for="Inscrição-Municipal">Inscrição Municipal:</label>
                 <input type="text" id="InscMunicipal">
             </div>
 
-            <div>
+            <div class="inputs">
                 <label for="Endereço">Endereço:</label>
                 <input type="text" id="Endereco">
             </div>
@@ -36,17 +36,17 @@
         <section>
             <h2>Dados do Tomador de Serviços</h2>
 
-            <div>
+            <div class="inputs">
                 <label for="Nome do Cliente">Nome do Cliente:</label>
                 <input type="text" id="Nome-do-Cliente">
             </div>
 
-            <div>
+            <div class="inputs">
                 <label for="CNPJ/CPF">CNPJ/CPF:</label>
                 <input type="text" id="CNPJ-CPF-Cliente">
             </div>
 
-            <div>
+            <div class="inputs">
                 <label for="Endereço-Cliente">Endereço do Cliente:</label>
                 <input type="text" id="Endereço-Cliente">
             </div>
@@ -55,12 +55,12 @@
         <section>
             <h2>Dados dos Serviços Prestados</h2>
 
-            <div>
-                <label for="descricao:">Descrição dos Serviços:</label>
+            <div class="inputs">
+                <label for="descricao:" class="serv">Descrição dos Serviços:</label>
                 <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
             </div>
 
-            <div>
+            <div class="inputs">
                 <label for="valor-total">Valor Total:</label>
                 <input type="text" id="valor-total">
 
@@ -70,13 +70,13 @@
         <input type="button" value="Gerar NFS-e" id="btnGerar">
     </main>
 
-    ---------------------------------------------------------------------------------------------------------------------------------------
+  
 
     <main class="containerGerar">
         <header class="logo">
             <img src="/img/logo.png" alt="">
 
-            <div>
+            <div class="infHeader">
                 <h1>Saguitech</h1>
                 <h2>Nota Fiscal de Serviço Eletrônica</h2>
             </div>
@@ -85,7 +85,7 @@
         </header>
 
         <section class="primeiro">
-            <h2 class="title">Dados do Prestador de Serviços</h2>
+        
             <div>
                 <label for="razao-social">Razão Social:</label>
                 <span id="razaoSocial-gerado"></span>
@@ -108,7 +108,7 @@
         </section>
 
         <section class="segundo">
-            <h2 class="title">Dados do Tomador de Serviços</h2>
+            <h2>Dados do Tomador de Serviços</h2>
 
             <div>
                 <label for="Nome do Cliente">Nome do Cliente:</label>
@@ -127,7 +127,7 @@
         </section>
 
         <section class="terceiro">
-            <h2 class="title">Dados dos Serviços Prestados</h2>
+            <h2>Dados dos Serviços Prestados</h2>
 
             <div>
                 <label for="descricao:">Descrição dos Serviços:</label>
@@ -141,7 +141,7 @@
 
             </div>
 
-            <h2 class="title">Nota Fiscal de Serviço Eletrônica</h2>
+            <h2>Outras Informações</h2>
 
             <div>
                 <span>ISS: 3% -- Valor: </span>
