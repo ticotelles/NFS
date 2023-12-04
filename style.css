@@ -1,0 +1,32 @@
+main{
+  
+}
+h2.title{
+    margin: auto;
+    text-align: center;
+}
+
+header{
+    border: 1px solid black;    
+}
+header.logo{
+    
+}
+
+.containerGerar{
+    align-items: center;
+    text-align:left;
+
+    border: 1px solid black;
+}
+
+.primeiro{
+    border: 1px solid black;
+}
+.segundo{
+    border: 1px solid black;
+}
+.terceiro{
+    border: 1px solid black;
+}
+

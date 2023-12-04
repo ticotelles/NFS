@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> NFS-e Saguitech</title>
+</head>
+
+<body>
+    <main class="container">
+        <section>
+            <h2>Dados do Prestador de Serviços</h2>
+            <div>
+                <label for="razao-social">Razão Social:</label>
+                <input type="text" id="razao-social">
+            </div>
+
+            <div>
+                <label for="CNPJ">CNPJ:</label>
+                <input type="text" id="CNPJ">
+            </div>
+
+            <div>
+                <label for="Inscrição-Municipal">Inscrição Municipal:</label>
+                <input type="text" id="InscMunicipal">
+            </div>
+
+            <div>
+                <label for="Endereço">Endereço:</label>
+                <input type="text" id="Endereco">
+            </div>
+        </section>
+
+        <section>
+            <h2>Dados do Tomador de Serviços</h2>
+
+            <div>
+                <label for="Nome do Cliente">Nome do Cliente:</label>
+                <input type="text" id="Nome-do-Cliente">
+            </div>
+
+            <div>
+                <label for="CNPJ/CPF">CNPJ/CPF:</label>
+                <input type="text" id="CNPJ-CPF-Cliente">
+            </div>
+
+            <div>
+                <label for="Endereço-Cliente">Endereço do Cliente:</label>
+                <input type="text" id="Endereço-Cliente">
+            </div>
+        </section>
+
+        <section>
+            <h2>Dados dos Serviços Prestados</h2>
+
+            <div>
+                <label for="descricao:">Descrição dos Serviços:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label for="valor-total">Valor Total:</label>
+                <input type="text" id="valor-total">
+
+            </div>
+        </section>
+
+        <input type="button" value="Gerar NFS-e" id="btnGerar">
+    </main>
+
+    ---------------------------------------------------------------------------------------------------------------------------------------
+
+    <main class="containerGerar">
+        <header class="logo">
+            <img src="/img/logo.png" alt="">
+
+            <div>
+                <h1>Saguitech</h1>
+                <h2>Nota Fiscal de Serviço Eletrônica</h2>
+            </div>
+
+
+        </header>
+
+        <section class="primeiro">
+            <h2 class="title">Dados do Prestador de Serviços</h2>
+            <div>
+                <label for="razao-social">Razão Social:</label>
+                <span id="razaoSocial-gerado"></span>
+            </div>
+
+            <div>
+                <label for="CNPJ">CNPJ:</label>
+                <span id="CNPJ-gerado"></span>
+            </div>
+
+            <div>
+                <label for="Inscrição-Municipal">Inscrição Municipal:</label>
+                <span type="text" id="Inscrição-Municipal-gerado">
+            </div>
+
+            <div>
+                <label for="Endereço">Endereço:</label>
+                <span type="text" id="Endereço-gerado"></span>
+            </div>
+        </section>
+
+        <section class="segundo">
+            <h2 class="title">Dados do Tomador de Serviços</h2>
+
+            <div>
+                <label for="Nome do Cliente">Nome do Cliente:</label>
+                <span type="text" id="Nome-do-Cliente-gerado"></span>
+            </div>
+
+            <div>
+                <label for="CNPJ/CPF">CNPJ/CPF:</label>
+                <span type="text" id="CNPJ/CPF-gerado"></span>
+            </div>
+
+            <div>
+                <label for="Endereço-Cliente">Endereço do Cliente:</label>
+                <span type="text" id="Endereço-Cliente-gerado"></span>
+            </div>
+        </section>
+
+        <section class="terceiro">
+            <h2 class="title">Dados dos Serviços Prestados</h2>
+
+            <div>
+                <label for="descricao:">Descrição dos Serviços:</label>
+                <span type="text" id="descricao-gerado"></span>
+            </div>
+
+            <div>
+                <label for="valor-total">Valor do Serviço:</label>
+                <span type="text" id="valor-total-gerado"></span>
+
+
+            </div>
+
+            <h2 class="title">Nota Fiscal de Serviço Eletrônica</h2>
+
+            <div>
+                <span>ISS: 3% -- Valor: </span>
+
+                <span id="iss">valor: </span>
+            </div>
+        </section>
+
+        <footer>
+
+            <label for="Data-local">Data de Emissão:</label>
+            <span type="text" id="data-local"></span>
+        </footer>
+    </main>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
